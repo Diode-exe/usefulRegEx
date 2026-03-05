@@ -15,3 +15,11 @@
 ```^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$``` matches a date in format YYYY-MM-DD, ISO 8601 format
 
 ```^\$\d+(\.\d{2})?$``` matches a price in format $123.45 or $123
+
+```([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})``` matches an email address
+
+## Shorthand
+
+\w (lowercase w) matches any "word" character (letters, numbers, and underscores).
+
+\W (uppercase W) matches anything that is not a word character (like spaces or punctuation).
