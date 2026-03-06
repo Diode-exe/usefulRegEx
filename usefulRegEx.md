@@ -23,3 +23,7 @@
 \w (lowercase w) matches any "word" character (letters, numbers, and underscores).
 
 \W (uppercase W) matches anything that is not a word character (like spaces or punctuation).
+
+## Bulk Rename Utility
+
+Match: ```^(\d{2})\s+(.*)``` Replace: ```\1 - \2``` This will match files that start with a two-digit number followed by some text, and rename them to have the format "XX - filename". For example, "01 file.txt" would be renamed to "01 - file.txt".
