@@ -20,9 +20,15 @@
 
 ## Shorthand
 
-\w (lowercase w) matches any "word" character (letters, numbers, and underscores).
+```\w``` (lowercase w) matches any "word" character (letters, numbers, and underscores).
 
-\W (uppercase W) matches anything that is not a word character (like spaces or punctuation).
+```\W``` (uppercase W) matches anything that is not a word character (like spaces or punctuation).
+
+```^\s+``` matches leading whitespace. 
+
+```[^\S\r\n]+$``` matches trailing whitespace. 
+
+```^\s+|\s+$``` matches leading and trailing whitespace.
 
 ## Bulk Rename Utility
 
