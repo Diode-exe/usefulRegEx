@@ -18,17 +18,17 @@
 
 ```([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})``` matches an email address
 
-## Shorthand
-
-```\w``` (lowercase w) matches any "word" character (letters, numbers, and underscores).
-
-```\W``` (uppercase W) matches anything that is not a word character (like spaces or punctuation).
-
 ```^\s+``` matches leading whitespace. 
 
 ```[^\S\r\n]+$``` matches trailing whitespace. 
 
 ```^\s+|\s+$``` matches leading and trailing whitespace.
+
+## Shorthand
+
+```\w``` (lowercase w) matches any "word" character (letters, numbers, and underscores).
+
+```\W``` (uppercase W) matches anything that is not a word character (like spaces or punctuation).
 
 ## Bulk Rename Utility
 
