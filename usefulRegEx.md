@@ -26,6 +26,8 @@
 
 ```Copy\n\nDelete\n\d+ Tokens.\d+.\d+ Tokens/s.1st Token Time: \d+.\d+ms``` matches a string that starts with "Copy", followed by two newlines, then "Delete", followed by a number of tokens, a time in milliseconds, and a token processing speed. This is useful for cleaning up a direct copy-paste from Intel AI Playground in cases where you can't generate an entire JSON file from the conversation (due to model limitations) and have to copy-paste the conversation.
 
+```Copy\n\n``` matches the leftover Copy text from the Copy button from a message from the user to the AI. Use after above regex.
+
 ## Shorthand
 
 ```\w``` (lowercase w) matches any "word" character (letters, numbers, and underscores).
