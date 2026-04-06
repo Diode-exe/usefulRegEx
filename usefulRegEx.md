@@ -18,11 +18,13 @@
 
 ```([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})``` matches an email address
 
-```^\s+``` matches leading whitespace. 
+```^\s+``` matches leading whitespace.
 
-```[^\S\r\n]+$``` matches trailing whitespace. 
+```[^\S\r\n]+$``` matches trailing whitespace.
 
 ```^\s+|\s+$``` matches leading and trailing whitespace.
+
+```Copy\n\nDelete\n\d+ Tokens.\d+.\d+ Tokens/s.1st Token Time: \d+.\d+ms``` matches a string that starts with "Copy", followed by two newlines, then "Delete", followed by a number of tokens, a time in milliseconds, and a token processing speed. This is useful for cleaning up a direct copy-paste from Intel AI Playground in cases where you can't generate an entire JSON file from the conversation (due to model limitations) and have to copy-paste the conversation.
 
 ## Shorthand
 
